@@ -8,11 +8,11 @@ database_name = "bookmark-db"
 database_id = "a8e668b3-8f4c-4e69-8911-ea15808365a9"
 
 # R2 存储桶配置（用于备份功能，可选）
-#
-#[[r2_buckets]]
-#binding = "BACKUP_BUCKET"
-#bucket_name = "bookmark-backups"
-#
+
+[[r2_buckets]]
+binding = "BACKUP_BUCKET"
+bucket_name = "bookmark-backups"
+
 # 注意：敏感的环境变量（如密码、密钥）应该在 Cloudflare Pages Dashboard 中设置
 # 而不是写在这个配置文件中！
 # 前往 Pages 项目 > Settings > Environment variables 手动添加：
